@@ -15,7 +15,7 @@ An end-to-end, zero-cost, enterprise-grade Retrieval-Augmented Generation (RAG) 
 
 
 *Figure 1: Streamlit-based interactive workbench featuring file ingestion, dynamic retrieval confidence, real-time agent execution telemetry, and streaming synthesized answers.*
-![Multi-Agent UI](https://raw.githubusercontent.com/your-username/multi_agent_rag/main/assets/ui_overview.png)
+![Multi-Agent UI](https://github.com/khushalpapnai/Multi_Agent_CRAG/blob/main/assets/Screenshot%202026-09-11%20135117.png?raw=true)
 
 ### Multi-Agent Autonomous State Machine
 
@@ -57,7 +57,8 @@ An end-to-end, zero-cost, enterprise-grade Retrieval-Augmented Generation (RAG) 
 ```
 
 *Figure 2: Deterministic routing pipeline enforcing zero hallucination via automated cross-validation.*
-![Multi-Agent UI](https://raw.githubusercontent.com/your-username/multi_agent_rag/main/assets/ui_overview.png)~~~~~~~~~~~~
+![Multi-Agent UI](https://github.com/khushalpapnai/Multi_Agent_CRAG/blob/main/assets/Screenshot%202026-09-11%20135152.png?raw=true)
+![Multi-Agent UI](https://github.com/khushalpapnai/Multi_Agent_CRAG/blob/main/assets/Screenshot%202026-09-11%20135925.png?raw=true)
 
 ---
 
