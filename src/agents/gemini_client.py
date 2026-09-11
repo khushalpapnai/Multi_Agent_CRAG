@@ -9,7 +9,7 @@ from src.config import get_logger, LLM_MODEL
 logger = get_logger(__name__)
 
 class GeminiClient:
-def __init__(self, api_key: str = None):
+   def __init__(self, api_key: str = None):
         """
         Initializes the unified Google GenAI SDK (2026 architecture).
         Fetches the API key from Streamlit secrets and configures automatic retries.
