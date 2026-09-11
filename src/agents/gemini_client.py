@@ -9,20 +9,30 @@ from src.config import get_logger, LLM_MODEL
 logger = get_logger(__name__)
 
 class GeminiClient:
-    def __init__(self, api_key: str = None):
+def __init__(self, api_key: str = None):
         """
         Initializes the unified Google GenAI SDK (2026 architecture).
-        Fetches the API key directly from Streamlit secrets to prevent routing errors.
+        Fetches the API key from Streamlit secrets and configures automatic retries.
         """
-        # 1. Force the system to use the secure Streamlit secret (Khushal)
         try:
             secure_key = st.secrets["GEMINI_API_KEY"]
         except Exception:
             logger.error("CRITICAL: GEMINI_API_KEY not found in Streamlit secrets!")
-            secure_key = api_key  # Fallback to the passed argument just in case
+            secure_key = api_key 
 
-        # 2. Initialize the client using the intercepted key (Khushal)
-        self.client = genai.Client(api_key=secure_key)
+        # Initialize the client with built-in HTTP retry options for 429 errors
+        self.client = genai.Client(
+            api_key=secure_key,
+            http_options=types.HttpOptions(
+                retry_options=types.HttpRetryOptions(
+                    initial_delay=2.0,  
+                    attempts=5,         
+                    jitter=1,           
+                    http_status_codes=[429, 500, 503], 
+                ),
+                timeout=120 * 1000,    
+            )
+        )
         self.model_id = LLM_MODEL
 
     def evaluate_context(self, prompt: str) -> Dict[str, str]:
