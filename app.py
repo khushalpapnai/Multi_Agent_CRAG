@@ -6,10 +6,11 @@ from src.agents.gemini_client import GeminiClient
 from src.agents.workflow import AgenticWorkflow
 
 st.set_page_config(
-    page_title="Autonomous Multi-Agent CRAG System",
-    page_icon="🧠",
+    page_title="Multi-Agent RAG System",
+    page_icon="assets/logo.png",
     layout="wide"
 )
+st.logo("assets/logo.png")
 
 # Initialize persistent memory objects within the ephemeral Streamlit runtime
 if "messages" not in st.session_state:
@@ -65,7 +66,7 @@ with st.sidebar:
     st.markdown("- **Storage Layer**: ChromaDB (In-Memory)")
     st.markdown("- **Architecture**: CRAG State Machine")
 
-st.title("🧠 Autonomous Multi-Agent Document Research Engine")
+st.title(" Autonomous Multi-Agent Document Research Engine")
 st.markdown("Submit complex analytical queries. The Critic Agent will verify all retrieved context before synthesis to mathematically eliminate hallucination anomalies.")
 
 for message in st.session_state.messages:

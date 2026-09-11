@@ -57,7 +57,7 @@ An end-to-end, zero-cost, enterprise-grade Retrieval-Augmented Generation (RAG) 
 ```
 
 *Figure 2: Deterministic routing pipeline enforcing zero hallucination via automated cross-validation.*
-![Multi-Agent UI](https://raw.githubusercontent.com/your-username/multi_agent_rag/main/assets/ui_overview.png)~~~~
+![Multi-Agent UI](https://raw.githubusercontent.com/your-username/multi_agent_rag/main/assets/ui_overview.png)~~~~~~~~~~~~
 
 ---
 
