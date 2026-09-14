@@ -6,7 +6,7 @@ An end-to-end, zero-cost, enterprise-grade Retrieval-Augmented Generation (RAG) 
 
 ## 🔗 Live Application & Demo
 
-* **Live Interactive Demo:** [Launch on Streamlit Community Cloud](https://www.google.com/search?q=https://your-streamlit-app-link-here.streamlit.app/)
+* **Live Interactive Demo:** [Launch on Streamlit Community Cloud](https://khushal-rag-agent.streamlit.app/s)
 ---
 
 ## 📸 System Architecture & Interface
